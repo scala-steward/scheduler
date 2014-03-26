@@ -1,7 +1,5 @@
 language: scala
-script: sbt test publishSigned sonatypeReleaseAll
+script: sbt test publish
 env:
   global:
-  - secure: ZMWmjd84xTT70bavIzNzm0NsmNtgfMthj9qYH3F7wpL/LowCWPSVK3M0DbJuR6/k9yt5nB4vcxZZM1BNYuoapP0ZVcVOw9UyOODZisyWjgntVZOWHgjP7Nit0I5e1xQ9PD4ga3E/EE/jp04WdFtV4wQzZsmJVeVCot8XE+j5RR0=
-  - secure: LRnjJkAKhQgskazczOLNBB5yd9LdHgS+h80/uokmcU5qZlTKHtkVw5XDcfhIVhXJyQ3DTNDdUzGVyPiovdnswZxAkeKJLUweMXDNEiq/lgqsIpXjOITfaVba5KK8wRCfLxvzxzE32/FrLRY9M97VhP7MmRblNu6lwhU/fmJD+Ls=
-  - secure: B+geuY9UAZNB2hXLw13wL5KCDzhMyiAUkzkYyYY+g3Z3U+tA2cRRl1sromkBUOMq2MlStoSFqRjFezA58zrAip0hfh1YbugUx7sNA7Zq5bz3ilvY2VoR8/uBHjvmWwjYWDS9gelAoHv6uavaDyFOR+PODJlMhiwmySDveRx6vMw=
+  - secure: awN0klzo5KO37k53X8RKsltU5Y4VhmedbNFu493hDow34ilwRYFc9mpND0R+iuseFHlpoLIftLTqg53aJ1PWTcdqgQ1DRnNBUFwSad4ObxtQ0QadB4nu/60bthnuItS5o5U4Fa4MQPHHuIwYmVZmGNBjSAJs2qa0NmkJmtSVD6s=
