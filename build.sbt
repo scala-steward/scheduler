@@ -25,12 +25,21 @@ pomIncludeRepository := (_ => false)
 pomExtra := (
   <url>https://github.com/nafg/scheduler</url>
   <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
   </licenses>
   <scm>
     <url>https://github.com/nafg/scheduler</url>
     <connection>scm:git:github.com/nafg/scheduler</connection>
   </scm>
   <developers>
+    <developer>
+      <id>nafg</id>
+      <name>nafg</name>
+    </developer>
   </developers>
 )
 
@@ -40,3 +49,5 @@ credentials += Credentials(
   sys.env("SONATYPE_USERNAME"),
   sys.env("SONATYPE_PASS")
 )
+
+pgpPassphrase := sys.env.get("GPGP").map(_.toArray)
