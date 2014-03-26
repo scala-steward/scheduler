@@ -1,4 +1,5 @@
 language: scala
+script: "sbt test publish sonatypeReleaseAll"
 env:
   global:
   - secure: ZMWmjd84xTT70bavIzNzm0NsmNtgfMthj9qYH3F7wpL/LowCWPSVK3M0DbJuR6/k9yt5nB4vcxZZM1BNYuoapP0ZVcVOw9UyOODZisyWjgntVZOWHgjP7Nit0I5e1xQ9PD4ga3E/EE/jp04WdFtV4wQzZsmJVeVCot8XE+j5RR0=

@@ -1,3 +1,7 @@
+import SonatypeKeys._
+
+sonatypeSettings
+
 name := "scheduler"
 
 version := "1.1"
@@ -24,7 +28,7 @@ pomExtra := (
   </licenses>
   <scm>
     <url>https://github.com/nafg/scheduler</url>
-    <connection>scm:git:https://github.com/nafg/scheduler</connection>
+    <connection>scm:git:github.com/nafg/scheduler</connection>
   </scm>
   <developers>
   </developers>
@@ -33,6 +37,6 @@ pomExtra := (
 credentials += Credentials(
   "Sonatype Nexus Repository Manager",
   "oss.sonatype.org",
-  sys.env("SONATYPE_USER"),
+  sys.env("SONATYPE_USERNAME"),
   sys.env("SONATYPE_PASS")
 )
