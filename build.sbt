@@ -10,9 +10,9 @@ publishMavenStyle := true
 
 publishTo := Some("Scheduler Bintray" at "https://api.bintray.com/maven/naftoligug/maven/scheduler")
 
-credentials += Credentials(
+credentials ++= sys.env.get("BINTRAYKEY").toSeq.map(Credentials(
   "Bintray API Realm",
   "api.bintray.com",
   "naftoligug",
-  sys.env("BINTRAYKEY")
-)
+  _
+))
