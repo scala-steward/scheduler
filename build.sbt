@@ -1,12 +1,10 @@
-name := "scheduler"
-
-version := "1.1.1"
-
 organization := "io.github.nafg"
+name := "scheduler"
+version := "2.0.0"
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.11"
 
-crossScalaVersions := Seq("2.10.5", "2.11.6")
+crossScalaVersions := Seq("2.10.6", "2.11.11", "2.12.3")
 
 publishMavenStyle := true
 
