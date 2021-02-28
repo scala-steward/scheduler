@@ -2,7 +2,7 @@ organization := "io.github.nafg"
 name := "scheduler"
 version := "2.0.0"
 
-crossScalaVersions := Seq("2.12.8", "2.13.5")
+crossScalaVersions := Seq("2.12.13", "2.13.5")
 scalaVersion := crossScalaVersions.value.last
 
 publishMavenStyle := true
