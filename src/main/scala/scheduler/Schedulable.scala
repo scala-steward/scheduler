@@ -17,7 +17,7 @@ class Scheduler {
   }
 
   def run() = canSchedules foreach { cs =>
-    cs forAllDue { t: cs.Task =>
+    cs forAllDue { (t: cs.Task) =>
       cs execute t
       if (cs.nextTime(t) < System.currentTimeMillis) cs delete t
     }
