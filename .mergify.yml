@@ -5,8 +5,7 @@ pull_request_rules:
       - author=scala-steward
       - check-success=Build and Test (ubuntu-latest, 2.12.15, temurin@11)
       - check-success=Build and Test (ubuntu-latest, 2.13.7, temurin@11)
-      - check-success=Build and Test (ubuntu-latest, 3.0.0-RC1, temurin@11)
-      - check-success=Build and Test (ubuntu-latest, 3.0.0-RC2, temurin@11)
+      - check-success=Build and Test (ubuntu-latest, 3.0.0, temurin@11)
     actions:
         merge:
             strict: true
