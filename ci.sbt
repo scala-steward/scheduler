@@ -1,4 +1,4 @@
-import _root_.io.github.nafg.mergify.dsl._
+import _root_.io.github.nafg.mergify.dsl.*
 
 
 mergifyExtraConditions := Seq(
@@ -14,6 +14,7 @@ inThisBuild(List(
   ),
   dynverGitDescribeOutput ~= (_.map(o => o.copy(dirtySuffix = sbtdynver.GitDirtySuffix("")))),
   dynverSonatypeSnapshots := true,
+  githubWorkflowScalaVersions := githubWorkflowScalaVersions.value.map(_.replaceFirst("\\d+$", "x")),
   githubWorkflowTargetTags ++= Seq("v*"),
   githubWorkflowPublishTargetBranches := Seq(RefPredicate.StartsWith(Ref.Tag("v"))),
   githubWorkflowPublish := Seq(
